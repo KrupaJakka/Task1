@@ -28,7 +28,8 @@ class _BankScreenState extends State<BankScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(scrollDirection: Axis.vertical,
+      body: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
         child: Container(
           decoration: const BoxDecoration(
             gradient: LinearGradient(
@@ -86,15 +87,15 @@ class _BankScreenState extends State<BankScreen> {
                             style: TextStyle(
                                 fontSize: 15, fontWeight: FontWeight.bold),
                           ),
-                           SizedBox(width: 5),
+                          SizedBox(width: 5),
                           Container(
                             height: 25,
                             width: 95,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
-                              color:  Color.fromARGB(255, 245, 219, 194),
+                              color: Color.fromARGB(255, 245, 219, 194),
                             ),
-                            child:  Center(
+                            child: Center(
                               child: Text(
                                 "Prepaid",
                                 style: TextStyle(
@@ -105,13 +106,13 @@ class _BankScreenState extends State<BankScreen> {
                               ),
                             ),
                           ),
-                           Spacer(),
-                           Icon(Icons.notifications_active_outlined),
+                          Spacer(),
+                          Icon(Icons.notifications_active_outlined),
                         ],
                       ),
                     ],
                   ),
-                   SizedBox(height: 20),
+                  SizedBox(height: 20),
 
                   // Main Content Section
                   Center(
@@ -166,8 +167,8 @@ class _BankScreenState extends State<BankScreen> {
                                           "|",
                                           style: TextStyle(
                                               fontSize: 40,
-                                              color:
-                                              Colors.black.withOpacity(0.3)),
+                                              color: Colors.black
+                                                  .withOpacity(0.3)),
                                         ),
                                         const Column(
                                           children: [
@@ -179,11 +180,13 @@ class _BankScreenState extends State<BankScreen> {
                                                       fontSize: 20,
                                                       color: Colors.black,
                                                       fontWeight:
-                                                      FontWeight.bold),
+                                                          FontWeight.bold),
                                                 ),
                                                 Text(
                                                   " Pack",
-                                                  style: TextStyle(fontSize: 10,),
+                                                  style: TextStyle(
+                                                    fontSize: 10,
+                                                  ),
                                                 )
                                               ],
                                             ),
@@ -209,10 +212,10 @@ class _BankScreenState extends State<BankScreen> {
                                             // Your action
                                           },
                                           style: ElevatedButton.styleFrom(
-                                            side:
-                                            BorderSide(color: Colors.orange),
+                                            side: BorderSide(
+                                                color: Colors.orange),
                                             foregroundColor:
-                                            Colors.orange, // Text color
+                                                Colors.orange, // Text color
                                           ),
                                           child: Text("View Pack"),
                                         ),
@@ -226,7 +229,7 @@ class _BankScreenState extends State<BankScreen> {
                                           style: ElevatedButton.styleFrom(
                                             backgroundColor: Colors.orange,
                                             foregroundColor:
-                                            Colors.white, // Text color
+                                                Colors.white, // Text color
                                           ),
                                           child: Text("Recharge"),
                                         )
@@ -236,7 +239,7 @@ class _BankScreenState extends State<BankScreen> {
                                 ),
                               ),
                             ),
-                             Positioned(
+                            Positioned(
                                 left: 20,
                                 bottom: 20,
                                 child: Row(
@@ -253,14 +256,15 @@ class _BankScreenState extends State<BankScreen> {
                                       width: 80,
                                     ),
                                     Text("Recharge",
-                                        style: TextStyle(fontWeight: FontWeight.bold,
-                                            color:
-                                            Color.fromARGB(255, 14, 14, 188)))
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            color: Color.fromARGB(
+                                                255, 14, 14, 188)))
                                   ],
                                 ))
                           ],
                         ),
-                         SizedBox(height: 20),
+                        SizedBox(height: 20),
                         Container(
                             height: 100,
                             width: 480,
@@ -291,7 +295,8 @@ class _BankScreenState extends State<BankScreen> {
                                       "Applicable on rechargees above Rs.249",
                                       style: TextStyle(
                                           fontSize: 10,
-                                          color: Color.fromARGB(255, 6, 16, 131)),
+                                          color:
+                                              Color.fromARGB(255, 6, 16, 131)),
                                     )),
                                 const Positioned(
                                     left: 20,
@@ -310,24 +315,25 @@ class _BankScreenState extends State<BankScreen> {
                                       "T&C apply",
                                       style: TextStyle(
                                           fontSize: 7,
-                                          color: Color.fromARGB(255, 6, 16, 131)),
+                                          color:
+                                              Color.fromARGB(255, 6, 16, 131)),
                                     )),
                                 Positioned(
                                   right: 90,
                                   bottom: 10,
                                   child: Container(
-                                      child:  Text(
-                                        "2",
-                                        style: TextStyle(
-                                            fontSize: 65,
-                                            fontWeight: FontWeight.bold,
-                                            color: Color.fromARGB(255, 230, 93, 13),
-                                            shadows: [
-                                              BoxShadow(
-                                                  color: Colors.black,
-                                                  offset: Offset(1, 2))
-                                            ]),
-                                      )),
+                                      child: Text(
+                                    "2",
+                                    style: TextStyle(
+                                        fontSize: 65,
+                                        fontWeight: FontWeight.bold,
+                                        color: Color.fromARGB(255, 230, 93, 13),
+                                        shadows: [
+                                          BoxShadow(
+                                              color: Colors.black,
+                                              offset: Offset(1, 2))
+                                        ]),
+                                  )),
                                 ),
                                 const Positioned(
                                     right: 45,
@@ -339,7 +345,7 @@ class _BankScreenState extends State<BankScreen> {
                                           fontSize: 15,
                                           color: Color.fromARGB(255, 1, 1, 95)),
                                     )),
-                                 Positioned(
+                                Positioned(
                                     right: 60,
                                     bottom: 55,
                                     child: Text(
@@ -383,12 +389,14 @@ class _BankScreenState extends State<BankScreen> {
                                           width: 55,
                                           decoration: BoxDecoration(
                                               borderRadius:
-                                              BorderRadius.circular(100),
-                                              color:
-                                              Colors.black.withOpacity(0.1)),
-                                          child: Icon(Icons.phone_android_rounded),
+                                                  BorderRadius.circular(100),
+                                              color: Colors.black
+                                                  .withOpacity(0.1)),
+                                          child:
+                                              Icon(Icons.phone_android_rounded),
                                         ),
-                                        Text("Recharge",style: TextStyle(fontSize: 10))
+                                        Text("Recharge",
+                                            style: TextStyle(fontSize: 10))
                                       ],
                                     ),
                                     SizedBox(
@@ -401,12 +409,14 @@ class _BankScreenState extends State<BankScreen> {
                                           width: 55,
                                           decoration: BoxDecoration(
                                               borderRadius:
-                                              BorderRadius.circular(100),
-                                              color:
-                                              Colors.black.withOpacity(0.1)),
-                                          child: Icon(Icons.currency_rupee_outlined),
+                                                  BorderRadius.circular(100),
+                                              color: Colors.black
+                                                  .withOpacity(0.1)),
+                                          child: Icon(
+                                              Icons.currency_rupee_outlined),
                                         ),
-                                        Text("Pay Bill",style: TextStyle(fontSize: 10))
+                                        Text("Pay Bill",
+                                            style: TextStyle(fontSize: 10))
                                       ],
                                     ),
                                     SizedBox(
@@ -419,12 +429,14 @@ class _BankScreenState extends State<BankScreen> {
                                           width: 55,
                                           decoration: BoxDecoration(
                                               borderRadius:
-                                              BorderRadius.circular(100),
-                                              color:
-                                              Colors.black.withOpacity(0.1)),
-                                          child: Icon(Icons.quick_contacts_dialer_rounded),
+                                                  BorderRadius.circular(100),
+                                              color: Colors.black
+                                                  .withOpacity(0.1)),
+                                          child: Icon(Icons
+                                              .quick_contacts_dialer_rounded),
                                         ),
-                                        Text("Landline",style: TextStyle(fontSize: 10))
+                                        Text("Landline",
+                                            style: TextStyle(fontSize: 10))
                                       ],
                                     ),
                                     SizedBox(
@@ -437,12 +449,13 @@ class _BankScreenState extends State<BankScreen> {
                                           width: 55,
                                           decoration: BoxDecoration(
                                               borderRadius:
-                                              BorderRadius.circular(100),
-                                              color:
-                                              Colors.black.withOpacity(0.1)),
+                                                  BorderRadius.circular(100),
+                                              color: Colors.black
+                                                  .withOpacity(0.1)),
                                           child: Icon(Icons.wifi),
                                         ),
-                                        Text("Book Fiber",style: TextStyle(fontSize: 10))
+                                        Text("Book Fiber",
+                                            style: TextStyle(fontSize: 10))
                                       ],
                                     ),
                                   ],
@@ -460,12 +473,13 @@ class _BankScreenState extends State<BankScreen> {
                                           width: 55,
                                           decoration: BoxDecoration(
                                               borderRadius:
-                                              BorderRadius.circular(100),
-                                              color:
-                                              Colors.black.withOpacity(0.1)),
+                                                  BorderRadius.circular(100),
+                                              color: Colors.black
+                                                  .withOpacity(0.1)),
                                           child: Icon(Icons.sim_card_outlined),
                                         ),
-                                        Text("UpGrade to\n 4G SIM",style: TextStyle(fontSize: 10))
+                                        Text("UpGrade to\n 4G SIM",
+                                            style: TextStyle(fontSize: 10))
                                       ],
                                     ),
                                     SizedBox(
@@ -478,12 +492,13 @@ class _BankScreenState extends State<BankScreen> {
                                           width: 55,
                                           decoration: BoxDecoration(
                                               borderRadius:
-                                              BorderRadius.circular(100),
-                                              color:
-                                              Colors.black.withOpacity(0.1)),
+                                                  BorderRadius.circular(100),
+                                              color: Colors.black
+                                                  .withOpacity(0.1)),
                                           child: Icon(Icons.dialpad_outlined),
                                         ),
-                                        Text("Choose Your\n Number",style: TextStyle(fontSize: 10))
+                                        Text("Choose Your\n Number",
+                                            style: TextStyle(fontSize: 10))
                                       ],
                                     ),
                                     SizedBox(
@@ -496,12 +511,16 @@ class _BankScreenState extends State<BankScreen> {
                                           width: 55,
                                           decoration: BoxDecoration(
                                               borderRadius:
-                                              BorderRadius.circular(100),
-                                              color:
-                                              Colors.black.withOpacity(0.1)),
-                                          child: Icon(Icons.do_not_disturb_alt_outlined),
+                                                  BorderRadius.circular(100),
+                                              color: Colors.black
+                                                  .withOpacity(0.1)),
+                                          child: Icon(Icons
+                                              .do_not_disturb_alt_outlined),
                                         ),
-                                        Text("Do not Disturb",style: TextStyle(fontSize: 10),)
+                                        Text(
+                                          "Do not Disturb",
+                                          style: TextStyle(fontSize: 10),
+                                        )
                                       ],
                                     ),
                                     SizedBox(
@@ -514,12 +533,13 @@ class _BankScreenState extends State<BankScreen> {
                                           width: 55,
                                           decoration: BoxDecoration(
                                               borderRadius:
-                                              BorderRadius.circular(100),
-                                              color:
-                                              Colors.black.withOpacity(0.1)),
+                                                  BorderRadius.circular(100),
+                                              color: Colors.black
+                                                  .withOpacity(0.1)),
                                           child: Icon(Icons.games_outlined),
                                         ),
-                                        Text("games",style: TextStyle(fontSize: 10))
+                                        Text("games",
+                                            style: TextStyle(fontSize: 10))
                                       ],
                                     ),
                                   ],
