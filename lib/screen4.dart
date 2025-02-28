@@ -172,8 +172,6 @@ class _ShortsScreen3State extends State<ShortsScreen3> {
       ),
     );
   }
-
-  // Widget for Right-side Icons
   Widget _buildIconButton(IconData icon, String label) {
     return Column(
       children: [

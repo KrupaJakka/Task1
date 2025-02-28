@@ -17,7 +17,6 @@ class _MyAppState extends State<MyApp> {
   int _selectedIndex = 0;
 
   static List<Widget> _pages = <Widget>[
-    // Center(child: Text('Home Page', style: TextStyle(fontSize: 20))),
     Center(
       child: ShortsScreen(),
     ),
