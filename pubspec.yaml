@@ -40,6 +40,9 @@ dependencies:
   cloud_firestore:
   firebase_storage:
   firebase_database:
+  dependencies:
+  firebase_data_connect: 
+
 
 
 dev_dependencies:
